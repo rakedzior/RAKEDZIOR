@@ -34,7 +34,8 @@ const Header = () => {
     { label: 'About me', id: 'about' },
     { label: 'Experience', id: 'experience' },
     { label: 'Education', id: 'education' },
-    { label: 'Portfolio', id: 'portfolio' }
+    { label: 'Portfolio', id: 'portfolio' },
+    { label: 'Contact Me', id: 'contact', isRoute: true }
   ];
 
   return (
