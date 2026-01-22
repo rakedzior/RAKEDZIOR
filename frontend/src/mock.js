@@ -193,15 +193,19 @@ export const portfolio = [
     id: 3,
     title: "Sectorial Exposures Review",
     industry: "Banking",
-    description: "Led analytics for HSBC's global High Transition Risk Sectors review, uncovering $9B in exposure discrepancies across 6 sectors. Analysis prompted senior management to strengthen exposure reporting controls across jurisdictions.",
-    problem: "Inconsistent exposure reporting across multiple systems and jurisdictions created regulatory risk and limited visibility into sectorial concentrations.",
-    approach: "Performed cross-system data reconciliation, built analytical models to identify discrepancies, and created executive dashboards for senior management review.",
-    tools: ["SQL", "Python", "GCP", "Tableau", "Excel"],
+    description: "Led analytics for HSBC's global High Transition Risk Sectors climate risk reporting initiative, covering multi-billion dollar portfolio across multiple jurisdictions. Identified structural data quality issues affecting $9B in exposure discrepancies, prompting enterprise-wide remediation and strengthened governance controls.",
+    problem: "Climate-related regulatory reporting relied on complex upstream reference data with inconsistent entity hierarchies and sector classifications across global portfolios. The underlying data represented exposures at multi-billion scale, where accuracy, consistency, and traceability were critical for regulatory compliance and risk management. Misalignment in how entities were grouped or classified could influence reported exposures at material scale, creating regulatory and reputational risk.",
+    approach: "Applied analytics-driven assurance methodology combining: (1) Large-scale data analysis to detect inconsistencies in entity hierarchies and sector attributes across Poland, Germany, India, and UAE portfolios, (2) Sample-based validation across higher-risk and standard portfolios, (3) Cross-source comparison of key reference data used for aggregation, (4) End-to-end review of data lineage from source systems to regulatory outputs. Performed iterative analysis across reporting cycles, distinguishing structural consistency challenges (entity grouping/aggregation) from classification accuracy challenges (industry/sector attributes). Executed root-cause analysis to separate data modeling issues from attribute-level errors.",
+    tools: ["SQL", "Python", "GCP", "Tableau", "Excel", "Data Quality Analytics"],
     outcomes: [
-      "Uncovered $9B exposure discrepancies",
-      "Identified 2 High Risk Issues across 6 sectors",
-      "Prompted enterprise-wide remediation plans",
-      "Improved regulatory reporting accuracy"
+      "Uncovered $9B in exposure discrepancies across 6 high-transition-risk sectors",
+      "Identified 2 High Risk Issues requiring senior management attention and remediation",
+      "Prompted enterprise-wide strengthening of exposure reporting controls across jurisdictions",
+      "Improved confidence in climate-related regulatory reporting for large global portfolio",
+      "Reduced risk of material misstatement in sector-level ESG disclosures",
+      "Strengthened data lineage transparency and governance practices",
+      "Established analytics-led assurance framework for complex regulatory environments",
+      "Enhanced stakeholder understanding of data quality impact through clear, actionable insights"
     ],
     thumbnail: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80"
   },
