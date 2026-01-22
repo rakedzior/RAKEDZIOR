@@ -209,5 +209,37 @@ export const portfolio = [
       "Improved data quality and governance"
     ],
     thumbnail: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
+  },
+  {
+    id: 5,
+    title: "Sanctions Compliance Analytics",
+    industry: "Banking",
+    description: "Delivered multi-jurisdictional sanctions compliance analytics across Poland, Germany, India, and UAE. Produced exception findings and non-compliant entity lists, increasing accuracy by 22% and reducing investigative cycles from weeks to days.",
+    problem: "Manual sanctions screening processes across multiple jurisdictions were time-consuming, inconsistent, and prone to gaps in coverage.",
+    approach: "Built automated screening logic, created exception dashboards with drill-through capabilities, and established repeatable analytical workflows across regions.",
+    tools: ["SQL", "Python", "Tableau", "Excel"],
+    outcomes: [
+      "Increased compliance accuracy by ~22%",
+      "Reduced investigative workflow from multi-week to one-week cycle",
+      "Enabled data-driven risk prioritization",
+      "Improved cross-jurisdictional consistency"
+    ],
+    thumbnail: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
+  },
+  {
+    id: 6,
+    title: "Auto Insurance Pricing Analytics",
+    industry: "Insurance",
+    description: "Conducted quarterly pricing reviews for auto insurance products, validating completeness and pricing assumptions. Implemented anomaly detection using logistic regression to flag irregular patterns, reducing review time by 40%.",
+    problem: "Manual pricing validation was inconsistent and time-consuming, with limited ability to detect anomalies across hundreds of submissions.",
+    approach: "Automated validation workflows, implemented ML-based anomaly detection, and created dashboards for pricing review teams with clear flagging logic.",
+    tools: ["Python", "SQL", "Excel", "Logistic Regression"],
+    outcomes: [
+      "Reduced review time by ~40%",
+      "Improved data quality for actuarial modeling",
+      "Enabled proactive anomaly detection",
+      "Reduced clarification cycles between teams"
+    ],
+    thumbnail: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"
   }
 ];
