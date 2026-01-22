@@ -21,8 +21,8 @@ const About = () => {
 
   const highlights = [
     { icon: Award, label: "5+ Years", text: "Analytics Experience" },
-    { icon: Users, label: "Multi-Jurisdictional", text: "Stakeholder Management" },
-    { icon: Target, label: "Decision-Ready", text: "Insights & Dashboards" }
+    { icon: Users, label: "Cross-Regional", text: "Stakeholder Collaboration" },
+    { icon: Target, label: "Decision-Ready", text: "Analytics & Dashboards" }
   ];
 
   return (
@@ -51,8 +51,16 @@ const About = () => {
 
           <div className="about-text-section">
             <div className="about-text-card">
-              <p className="about-paragraph">{aboutMe.intro}</p>
-              <p className="about-paragraph">{aboutMe.expertise}</p>
+              <div className="text-block">
+                <h4 className="text-section-label">WHAT I DO</h4>
+                <p className="about-paragraph">{aboutMe.whatIDo}</p>
+              </div>
+              
+              <div className="text-block">
+                <h4 className="text-section-label">HOW I WORK</h4>
+                <p className="about-paragraph">{aboutMe.howIWork}</p>
+              </div>
+              
               <p className="about-paragraph emphasis">{aboutMe.lookingFor}</p>
             </div>
           </div>
