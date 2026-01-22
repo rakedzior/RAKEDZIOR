@@ -175,19 +175,25 @@ export const portfolio = [
   },
   {
     id: 2,
-    title: "Aged Claims Model",
+    title: "Covered Entity Onboarding Dashboard",
     industry: "Pharmaceutical",
-    description: "Predictive analytics model identifying aged claims from 600k+ MDRP/340B claims dataset, supporting $80M potential revenue recovery. Improved prioritization workflows for client-facing revenue recovery teams.",
-    problem: "Manual identification of aged claims was time-consuming and inconsistent, leading to missed revenue recovery opportunities.",
-    approach: "Built SQL-based analytical models to flag claims based on age, status, and historical patterns. Integrated findings into Tableau dashboards for prioritization.",
-    tools: ["SQL", "Python", "Snowflake", "Tableau"],
+    description: "Built interactive CE onboarding visibility dashboard tracking 24,000+ Covered Entities across 4-gate onboarding process. Matrix-based design with drill-down capabilities enables operational teams to identify bottlenecks and prioritize follow-ups, improving onboarding transparency and reducing stagnation.",
+    problem: "Internal Kalderos teams lacked visibility into Covered Entities (CE) onboarding process in Truzo system. Unable to identify CEs stuck in specific onboarding steps or track time-to-completion across the pipeline. Manual investigation required to understand bottlenecks, preventing data-driven prioritization of follow-ups and stakeholder outreach.",
+    approach: "Designed interactive matrix visualization showing onboarding gates (4 stages: Onboarding Kicked Off, Terms & Conditions Accepted, Primary Admin Designated, Attestation In Progress) vs. Days Since Last Activity buckets (Day 0-12+). Built two dbt data models: (1) Gate x Day Matrix generating all gate/day combinations with CE counts for each cell, including empty ones for full landscape visibility, (2) CE Detail View providing drill-down to individual CE information with key metrics. Implemented show/hide switches for empty gates/days/combinations and multi-attribute filters for refined analysis. Added minimal context-based instructions for user guidance.",
+    tools: ["Tableau", "SQL", "Snowflake", "dbt Cloud", "Data Visualization"],
     outcomes: [
-      "Identified 83k aged claims from 600k+ dataset",
-      "Supported ~$80M potential revenue recovery",
-      "Improved prioritization efficiency by 45%",
-      "Reduced manual claim review time significantly"
+      "Provided end-to-end visibility of 24,000+ CE onboarding activities",
+      "Enabled quick identification of stagnant CEs (752 in progress, 2,175 completed)",
+      "Reduced manual investigation time through interactive drill-down from matrix to CE details",
+      "Supported data-driven prioritization of onboarding follow-ups and Customer Success outreach",
+      "Designed scalable solution adaptable to operational process changes",
+      "Delivered actionable insights for operational efficiency improvements"
     ],
-    thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/0h3sly3e_Dashboard%20Ready.png",
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/0h3sly3e_Dashboard%20Ready.png"
+    ],
+    note: "All CE numbers, IDs, and contact information shown in dashboard screenshots are anonymized/randomized to protect confidential client data."
   },
   {
     id: 3,
