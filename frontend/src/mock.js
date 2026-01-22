@@ -189,7 +189,8 @@ export const portfolio = [
     screenshots: [
       "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/0h3sly3e_Dashboard%20Ready.png"
     ],
-    note: "All CE numbers, IDs, and contact information shown in dashboard screenshots are anonymized/randomized to protect confidential client data."
+    note: "All CE numbers, IDs, and contact information shown in dashboard screenshots are anonymized/randomized to protect confidential client data.",
+    disableZoom: true
   },
   {
     id: 3,
