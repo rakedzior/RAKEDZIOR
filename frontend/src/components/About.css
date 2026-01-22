@@ -254,6 +254,18 @@
     font-size: 2rem;
   }
 
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-card {
+    padding: 1.5rem;
+  }
+
+  .about-text-card {
+    padding: 2rem;
+  }
+
   .about-paragraph {
     font-size: 1rem;
   }
