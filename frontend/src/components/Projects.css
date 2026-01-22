@@ -18,6 +18,25 @@
   margin-right: auto;
 }
 
+.data-disclaimer {
+  text-align: center;
+  font-size: 0.9375rem;
+  color: #c5c5c5;
+  margin-top: 1.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1.5rem;
+  background: rgba(7, 95, 228, 0.05);
+  border: 1px solid rgba(7, 95, 228, 0.2);
+  border-radius: 8px;
+}
+
+.data-disclaimer strong {
+  color: #075FE4;
+  font-weight: 600;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
