@@ -255,10 +255,6 @@
   transition: transform 0.2s ease;
 }
 
-.btn-primary:hover .btn-icon {
-  transform: translateX(4px);
-}
-
 @media (max-width: 1024px) {
   .hero-container {
     grid-template-columns: 1fr;
