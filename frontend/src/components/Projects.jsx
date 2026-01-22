@@ -72,6 +72,19 @@ const Projects = () => {
                 <img src={selectedProject.thumbnail} alt={selectedProject.title} />
               </div>
 
+              {selectedProject.screenshots && selectedProject.screenshots.length > 1 && (
+                <div className="modal-screenshots">
+                  <h4 className="section-heading">Dashboard Screenshots</h4>
+                  <div className="screenshots-grid">
+                    {selectedProject.screenshots.map((screenshot, idx) => (
+                      <div key={idx} className="screenshot-item">
+                        <img src={screenshot} alt={`${selectedProject.title} - View ${idx + 1}`} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="modal-section">
                 <h4 className="section-heading">Overview</h4>
                 <p className="section-text">{selectedProject.description}</p>
