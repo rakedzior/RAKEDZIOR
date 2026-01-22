@@ -154,7 +154,7 @@
 }
 
 .submit-button {
-  background: #075FE4;
+  background: #003d82;
   color: #FAFAFA;
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -171,9 +171,9 @@
 }
 
 .submit-button:hover:not(:disabled) {
-  background: #0651c4;
+  background: #002d5f;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(7, 95, 228, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 61, 130, 0.4);
 }
 
 .submit-button:disabled {
