@@ -60,7 +60,7 @@ const Hero = () => {
                 View Portfolio
               </Button>
               <Button 
-                onClick={() => window.open('https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/uncbcd8u_Rafal_Kedzior_Resume_2026.pdf', '_blank')}
+                onClick={() => window.open('https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/whkp9565_Rafal_Kedzior_Resume_2026.pdf', '_blank')}
                 className="btn-primary"
               >
                 <Download size={18} />
