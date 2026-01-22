@@ -123,28 +123,6 @@
 }
 
 @media (max-width: 1024px) {
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .about-image-desktop {
-    display: none;
-  }
-
-  .about-image-mobile {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .about-image-mobile img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-    margin: 0 auto;
-    display: block;
-  }
-
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
