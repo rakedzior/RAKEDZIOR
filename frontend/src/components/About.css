@@ -29,11 +29,8 @@
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 4rem;
-  align-items: start;
-  margin-bottom: 5rem;
+  max-width: 900px;
+  margin: 0 auto 5rem;
 }
 
 .about-text {
