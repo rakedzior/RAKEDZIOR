@@ -163,14 +163,9 @@ export const portfolio = [
       "Dashboard now used across Internal Operations, Customer Success, and executive QBRs",
       "Established reusable pattern for optimizing other dashboards with similar performance issues"
     ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/e3zvkx2x_image.png",
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/t3iiefeg_59229753-614f-4c18-838a-34410ae326ec.png",
     screenshots: [
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/e3zvkx2x_image.png",
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/irk8g1ar_image.png",
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/va9su7aq_image.png",
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/qjq6msk8_image.png",
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/jj468675_image.png",
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/ngy4mpdw_image.png"
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/t3iiefeg_59229753-614f-4c18-838a-34410ae326ec.png"
     ]
   },
   {
