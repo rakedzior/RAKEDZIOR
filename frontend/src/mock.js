@@ -246,18 +246,22 @@ export const portfolio = [
   },
   {
     id: 6,
-    title: "Auto Insurance Pricing Analytics",
-    industry: "Insurance",
-    description: "Conducted quarterly pricing reviews for auto insurance products, validating completeness and pricing assumptions. Implemented anomaly detection using logistic regression to flag irregular patterns, reducing review time by 40%.",
-    problem: "Manual pricing validation was inconsistent and time-consuming, with limited ability to detect anomalies across hundreds of submissions.",
-    approach: "Automated validation workflows, implemented ML-based anomaly detection, and created dashboards for pricing review teams with clear flagging logic.",
-    tools: ["Python", "SQL", "Excel", "Logistic Regression"],
+    title: "Probabilistic Aging & De-Aging Model",
+    industry: "Pharmaceutical",
+    description: "Designed end-to-end data-driven aging framework for Medicaid dispute management, enabling manufacturers to withhold rebate payments probabilistically. 7-quarter retrospective analysis demonstrated that ~80% of disputed claims remain Open/Impasse, supporting dynamic state-aware thresholds and risk-stratified invoicing strategies.",
+    problem: "Approximately 80% of disputed noncompliant claims remained indefinitely in Open or Impasse states, creating cash flow uncertainty and unnecessary rebate payments under pay-and-chase model. Clients hesitant to adopt aging-based invoicing due to perceived risks: late adverse state resolutions, CE verification reversals, and shifts in state response behavior. Existing aging logic relied on mean days-to-response, failing to capture tail risk or behavioral changes.",
+    approach: "Performed 7-quarter retrospective analysis using claim audit logs to simulate point-in-time aging decisions:\n\n• Reconstructed claim status as-of historical analysis dates\n• Derived state response distributions (avg, median, 75th, 90th percentiles)\n• Tracked CE verification timing relative to aging thresholds\n• Measured post-aging outcomes (MFR wins/losses, CE verification, continued aging)\n\nImplemented formal lifecycle model with dynamic aging qualification (state-aware thresholds: 548-day baseline vs state-specific average) and explicit de-aging rules. Built production-grade incremental models in dbt Cloud with strict temporal guarantees preventing retroactive reversals. Designed Open → Impasse transition tracking for risk stratification.",
+    tools: ["Snowflake", "dbt Cloud", "SQL", "Data Modeling", "Statistical Analysis"],
     outcomes: [
-      "Reduced review time by ~40%",
-      "Improved data quality for actuarial modeling",
-      "Enabled proactive anomaly detection",
-      "Reduced clarification cycles between teams"
+      "Demonstrated aging should be limited to Open claims under current state behavior",
+      "Quantified true risk of de-aging using 7-quarter historical simulation",
+      "Reduced absolute loss exposure through 90th percentile thresholds vs average-based logic",
+      "Established scalable foundation for probabilistic invoicing and risk-weighted credits",
+      "Delivered production-grade, auditable aging framework suitable for regulatory scrutiny",
+      "Enabled temporal analysis showing states increasingly respond later, converting Open to Impasse",
+      "Implemented dbt tests enforcing lifecycle integrity and chronological consistency",
+      "Provided quantitative evidence addressing client concerns around adverse outcomes"
     ],
-    thumbnail: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"
+    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
   }
 ];
