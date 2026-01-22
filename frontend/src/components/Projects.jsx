@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, X } from 'lucide-react';
+import { ExternalLink, X, ZoomIn } from 'lucide-react';
 import { portfolio } from '../mock';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Badge } from './ui/badge';
@@ -7,6 +7,7 @@ import './Projects.css';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [zoomedImage, setZoomedImage] = useState(null);
 
   return (
     <section id="portfolio" className="projects">
@@ -68,8 +69,14 @@ const Projects = () => {
             </DialogHeader>
 
             <div className="modal-body">
-              <div className="modal-image">
+              <div 
+                className="modal-image zoomable"
+                onClick={() => setZoomedImage(selectedProject.thumbnail)}
+              >
                 <img src={selectedProject.thumbnail} alt={selectedProject.title} />
+                <div className="zoom-overlay">
+                  <ZoomIn size={24} />
+                </div>
               </div>
 
               {selectedProject.screenshots && selectedProject.screenshots.length > 1 && (
@@ -77,8 +84,15 @@ const Projects = () => {
                   <h4 className="section-heading">Dashboard Screenshots</h4>
                   <div className="screenshots-grid">
                     {selectedProject.screenshots.map((screenshot, idx) => (
-                      <div key={idx} className="screenshot-item">
+                      <div 
+                        key={idx} 
+                        className="screenshot-item zoomable"
+                        onClick={() => setZoomedImage(screenshot)}
+                      >
                         <img src={screenshot} alt={`${selectedProject.title} - View ${idx + 1}`} />
+                        <div className="zoom-overlay">
+                          <ZoomIn size={20} />
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -130,6 +144,19 @@ const Projects = () => {
             </div>
           </DialogContent>
         </Dialog>
+      )}
+
+      {zoomedImage && (
+        <div className="image-lightbox" onClick={() => setZoomedImage(null)}>
+          <button 
+            className="lightbox-close"
+            onClick={() => setZoomedImage(null)}
+            aria-label="Close"
+          >
+            <X size={32} />
+          </button>
+          <img src={zoomedImage} alt="Zoomed view" className="lightbox-image" />
+        </div>
       )}
     </section>
   );
