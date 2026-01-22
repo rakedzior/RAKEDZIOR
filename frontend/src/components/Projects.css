@@ -242,6 +242,9 @@
   height: auto;
   object-fit: contain;
   display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .zoomable {
