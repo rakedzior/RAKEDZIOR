@@ -196,21 +196,20 @@ export const portfolio = [
     id: 3,
     title: "Sectorial Exposures Review",
     industry: "Banking",
-    description: "Led analytics for HSBC's global High Transition Risk Sectors climate risk reporting initiative, covering multi-billion dollar portfolio across multiple jurisdictions. Identified structural data quality issues affecting $9B in exposure discrepancies, prompting enterprise-wide remediation and strengthened governance controls.",
-    problem: "Climate-related regulatory reporting relied on complex upstream reference data with inconsistent entity hierarchies and sector classifications across global portfolios. The underlying data represented exposures at multi-billion scale, where accuracy, consistency, and traceability were critical for regulatory compliance and risk management. Misalignment in how entities were grouped or classified could influence reported exposures at material scale, creating regulatory and reputational risk.",
-    approach: "Applied analytics-driven assurance methodology combining:\n\n• Large-scale data analysis to detect inconsistencies in entity hierarchies and sector attributes across Poland, Germany, India, and UAE portfolios\n• Sample-based validation across higher-risk and standard portfolios\n• Cross-source comparison of key reference data used for aggregation\n• End-to-end review of data lineage from source systems to regulatory outputs\n\nPerformed iterative analysis across reporting cycles, distinguishing structural consistency challenges (entity grouping/aggregation) from classification accuracy challenges (industry/sector attributes). Executed root-cause analysis to separate data modeling issues from attribute-level errors.",
+    description: "Led analytics for Tier 1 Global Bank's High Transition Risk Sectors climate risk reporting initiative, covering multi-billion dollar portfolio across key global markets. Identified structural data quality issues affecting material exposure discrepancies, prompting enterprise-wide remediation and strengthened governance controls.",
+    problem: "Climate-related regulatory reporting relied on complex upstream reference data with inconsistent entity hierarchies and sector classifications across global portfolios. The underlying data represented exposures at multi-billion scale, where accuracy, consistency, and traceability were critical for regulatory compliance. Misalignment in how entities were grouped or classified could influence reported exposures at material scale, creating regulatory and reputational risk.",
+    approach: "Applied analytics-driven assurance methodology combining:\n\n• Large-scale data analysis to detect inconsistencies in entity hierarchies and sector attributes across EMEA and APAC portfolios\n• Sample-based validation across higher-risk and standard portfolios\n• Cross-source comparison of key reference data used for aggregation\n• End-to-end review of data lineage from source systems to regulatory outputs\n\nPerformed iterative analysis across reporting cycles, distinguishing structural consistency challenges (entity grouping) from classification accuracy challenges (sector attributes). Executed root-cause analysis to separate data modeling issues from attribute-level errors.",
     tools: ["SQL", "Python", "GCP", "Tableau", "Excel", "Data Quality Analytics"],
     outcomes: [
-      "Uncovered $9B in exposure discrepancies across 6 high-transition-risk sectors",
-      "Identified 2 High Risk Issues requiring senior management attention and remediation",
+      "Uncovered material exposure discrepancies across 6 high-transition-risk sectors",
+      "Identified critical data integrity issues requiring senior management attention and remediation",
       "Prompted enterprise-wide strengthening of exposure reporting controls across jurisdictions",
       "Improved confidence in climate-related regulatory reporting for large global portfolio",
       "Reduced risk of material misstatement in sector-level ESG disclosures",
       "Strengthened data lineage transparency and governance practices",
-      "Established analytics-led assurance framework for complex regulatory environments",
-      "Enhanced stakeholder understanding of data quality impact through clear, actionable insights"
+      "Established analytics-led assurance framework for complex regulatory environments"
     ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/ocol8nen_tr6.png"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/5upbjyck_SECTORIAL.png"
   },
   {
     id: 4,
