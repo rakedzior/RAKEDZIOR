@@ -148,7 +148,8 @@ export const education = [
 export const portfolio = [
   {
     id: 1,
-    title: "Noncompliance KPI Metrics Dashboard",
+    title: "Noncompliance KPI Metrics",
+    subtitle: "Dashboard",
     industry: "Pharmaceutical",
     description: "Rebuilt MDRP compliance dashboard with pre-aggregated data model, reducing load times by 60% and filter response by 90%. Dashboard tracks 10+ KPIs across noncompliance, disputes, and resolutions, supporting internal teams, Customer Success, and Quarterly Business Reviews.",
     problem: "Legacy dashboard suffered from severe performance issues due to 45M row dataset with 5 separate data sources requiring multiple joins. Load times exceeded 10 seconds, filters took 20+ seconds to apply, and users experienced frequent timeouts. The raw claim granularity made analysis difficult and hindered strategic decision-making for Customer Success teams.",
