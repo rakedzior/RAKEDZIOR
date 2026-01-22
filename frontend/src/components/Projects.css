@@ -191,7 +191,10 @@
   overflow: hidden;
   margin-bottom: 2rem;
   position: relative;
-  cursor: pointer;
+}
+
+.modal-image.zoomable {
+  cursor: zoom-in;
 }
 
 .modal-image.zoomable:hover .zoom-overlay {
