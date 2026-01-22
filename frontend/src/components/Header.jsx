@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,17 +18,35 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  const handleNavigation = (item) => {
+    if (item.isRoute) {
+      navigate('/contact');
       setIsMobileMenuOpen(false);
+    } else {
+      scrollToSection(item.id);
     }
   };
 
@@ -41,7 +62,7 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="logo">
+        <div className="logo" onClick={() => navigate('/')}>
           <span className="logo-text">RK</span>
         </div>
 
@@ -49,7 +70,7 @@ const Header = () => {
           {navItems.map((item) => (
             <button
               key={item.id}
-              onClick={() => scrollToSection(item.id)}
+              onClick={() => handleNavigation(item)}
               className="nav-link"
             >
               {item.label}
@@ -71,7 +92,7 @@ const Header = () => {
           {navItems.map((item) => (
             <button
               key={item.id}
-              onClick={() => scrollToSection(item.id)}
+              onClick={() => handleNavigation(item)}
               className="mobile-nav-link"
             >
               {item.label}
@@ -81,6 +102,9 @@ const Header = () => {
       )}
     </header>
   );
+};
+
+export default Header;
 };
 
 export default Header;
