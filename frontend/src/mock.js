@@ -283,6 +283,6 @@ export const portfolio = [
       "Provided quantitative evidence addressing client concerns around adverse outcomes and adoption hesitancy",
       "Created extensible framework supporting future ML-based de-aging prediction models"
     ],
-    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/yv5mx53i_Aging%20DeAging.jpg"
   }
 ];
