@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin } from 'lucide-react';
 import { personalInfo } from '../mock';
 import './Footer.css';
 
@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3 className="footer-logo">RK</h3>
+            <h3 className="footer-logo">Rafał Kędzior</h3>
             <p className="footer-tagline">{personalInfo.title}</p>
             <p className="footer-location">
               <MapPin size={16} />
@@ -43,28 +43,18 @@ const Footer = () => {
                   <span>{personalInfo.phone}</span>
                 </a>
               </li>
+              <li>
+                <a 
+                  href={personalInfo.linkedin} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="contact-item"
+                >
+                  <Linkedin size={18} />
+                  <span>LinkedIn Profile</span>
+                </a>
+              </li>
             </ul>
-
-            <div className="social-links">
-              <a 
-                href={personalInfo.linkedin} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="social-link"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a 
-                href={personalInfo.github} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="social-link"
-                aria-label="GitHub"
-              >
-                <Github size={20} />
-              </a>
-            </div>
           </div>
         </div>
 
