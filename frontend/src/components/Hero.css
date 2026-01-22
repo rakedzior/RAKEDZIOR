@@ -190,7 +190,7 @@
 }
 
 .btn-primary {
-  background: #075FE4;
+  background: #003d82;
   color: #FAFAFA;
   padding: 0.875rem 1.75rem;
   font-size: 1rem;
@@ -205,9 +205,9 @@
 }
 
 .btn-primary:hover {
-  background: #0651c4;
+  background: #002d5f;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(7, 95, 228, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 61, 130, 0.4);
 }
 
 .btn-secondary {
