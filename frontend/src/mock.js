@@ -15,9 +15,9 @@ export const personalInfo = {
 };
 
 export const aboutMe = {
-  intro: "I'm a Data Analyst & Analytics Engineer with 5+ years of experience in analytics, data modeling, and BI delivery. I specialize in building ELT pipelines, dimensional models, and KPI dashboards that drive operational and decision analytics.",
-  expertise: "My expertise lies in transforming raw data into strategic insights through modern data stack technologies. I work in a task-based consulting model, supporting stakeholders with operational reporting, reconciliation workflows, and data validation processes. With strong leadership and stakeholder management skills, I've consistently maintained direct contact with internal stakeholders across multiple departments and geographies, translating complex technical concepts into business value and building consensus around data-driven initiatives.",
-  lookingFor: "I'm seeking opportunities to leverage my skills in Python, SQL, Snowflake, and Tableau to build analytics solutions that create measurable business impact. I thrive in environments where I can collaborate with cross-functional teams, lead analytical initiatives, and deliver insights that drive strategic decision-making."
+  whatIDo: "I'm a Data Analyst & Analytics Engineer with 5+ years of experience in analytics, data modeling, and BI delivery. I specialize in building ELT pipelines, dimensional models, and KPI dashboards that support operational and decision analytics.",
+  howIWork: "I transform raw data into strategic insights using modern data stack technologies. I work in a task-based consulting model, supporting stakeholders with operational reporting, reconciliation workflows, and data validation processes. I collaborate closely with teams across departments and geographies, translating complex technical concepts into business value and aligning stakeholders around data-driven initiatives.",
+  lookingFor: "I'm interested in roles where I can apply Python, SQL, Snowflake, and Tableau to build analytics solutions with measurable business impact — working closely with cross-functional teams and leading analytical initiatives that support strategic decision-making."
 };
 
 export const skills = {
