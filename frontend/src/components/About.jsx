@@ -21,17 +21,9 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-text">
-            <div className="about-image-mobile">
-              <img src={personalInfo.photo} alt={personalInfo.name} />
-            </div>
             <p className="about-paragraph">{aboutMe.intro}</p>
             <p className="about-paragraph">{aboutMe.expertise}</p>
             <p className="about-paragraph">{aboutMe.lookingFor}</p>
-          </div>
-
-          <div className="about-image-desktop">
-            <img src={personalInfo.photo} alt={personalInfo.name} />
-            <div className="image-border"></div>
           </div>
         </div>
 
