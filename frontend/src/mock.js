@@ -196,7 +196,8 @@ export const portfolio = [
   },
   {
     id: 3,
-    title: "Sectorial Exposures Review",
+    title: "Sectorial Exposures",
+    subtitle: "Analytics Review",
     industry: "Banking",
     description: "Led analytics for Tier 1 Global Bank's High Transition Risk Sectors climate risk reporting initiative, covering multi-billion dollar portfolio across key global markets. Identified structural data quality issues affecting material exposure discrepancies, prompting enterprise-wide remediation and strengthened governance controls.",
     problem: "Climate-related regulatory reporting relied on complex upstream reference data with inconsistent entity hierarchies and sector classifications across global portfolios. The underlying data represented exposures at multi-billion scale, where accuracy, consistency, and traceability were critical for regulatory compliance. Misalignment in how entities were grouped or classified could influence reported exposures at material scale, creating regulatory and reputational risk.",
