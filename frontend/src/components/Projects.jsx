@@ -70,13 +70,15 @@ const Projects = () => {
 
             <div className="modal-body">
               <div 
-                className="modal-image zoomable"
-                onClick={() => setZoomedImage(selectedProject.thumbnail)}
+                className={`modal-image ${!selectedProject.disableZoom ? 'zoomable' : ''}`}
+                onClick={!selectedProject.disableZoom ? () => setZoomedImage(selectedProject.thumbnail) : undefined}
               >
                 <img src={selectedProject.thumbnail} alt={selectedProject.title} />
-                <div className="zoom-overlay">
-                  <ZoomIn size={24} />
-                </div>
+                {!selectedProject.disableZoom && (
+                  <div className="zoom-overlay">
+                    <ZoomIn size={24} />
+                  </div>
+                )}
               </div>
 
               {selectedProject.screenshots && selectedProject.screenshots.length > 1 && (
@@ -86,13 +88,15 @@ const Projects = () => {
                     {selectedProject.screenshots.map((screenshot, idx) => (
                       <div 
                         key={idx} 
-                        className="screenshot-item zoomable"
-                        onClick={() => setZoomedImage(screenshot)}
+                        className={`screenshot-item ${!selectedProject.disableZoom ? 'zoomable' : ''}`}
+                        onClick={!selectedProject.disableZoom ? () => setZoomedImage(screenshot) : undefined}
                       >
                         <img src={screenshot} alt={`${selectedProject.title} - View ${idx + 1}`} />
-                        <div className="zoom-overlay">
-                          <ZoomIn size={20} />
-                        </div>
+                        {!selectedProject.disableZoom && (
+                          <div className="zoom-overlay">
+                            <ZoomIn size={20} />
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
