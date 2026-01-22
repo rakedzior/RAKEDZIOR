@@ -11,7 +11,7 @@ export const personalInfo = {
   github: "https://github.com/rafalkedzior",
   photo: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/2u3jlg3m_1761838013555.jpg",
   yearsOfExperience: "5+",
-  projectsCompleted: "20+"
+  projectsCompleted: "100+"
 };
 
 export const aboutMe = {
