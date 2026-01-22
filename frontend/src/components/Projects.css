@@ -286,6 +286,10 @@
   position: relative;
 }
 
+.screenshot-item:not(.zoomable) {
+  cursor: default;
+}
+
 .screenshot-item.zoomable {
   cursor: zoom-in;
 }
