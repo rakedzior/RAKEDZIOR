@@ -3,7 +3,7 @@
 export const personalInfo = {
   name: "Rafał Kędzior",
   title: "Data Analyst | BI Developer | Analytics Engineer",
-  tagline: "Turning complex data into actionable business insights through scalable analytics and dashboards",
+  tagline: "Turning complex data into decision-ready insights through analytics engineering and BI.",
   location: "Cracow, Poland",
   email: "ra.kedzior@gmail.com",
   phone: "+48 790-591-100",
