@@ -1,14 +1,22 @@
 import React from 'react';
-import { User, Database, BarChart3, Code2 } from 'lucide-react';
-import { aboutMe, skills, personalInfo } from '../mock';
+import { BarChart3, Database, Code2 } from 'lucide-react';
+import { aboutMe, skills } from '../mock';
 import './About.css';
 
 const About = () => {
   const skillCategories = [
-    { title: 'Analytics', skills: skills.analytics, icon: BarChart3 },
-    { title: 'Data Modeling', skills: skills.dataModeling, icon: Database },
-    { title: 'BI & Visualization', skills: skills.visualization, icon: BarChart3 },
-    { title: 'Data Engineering', skills: skills.engineering, icon: Code2 }
+    { 
+      ...skills.analytics,
+      icon: BarChart3
+    },
+    { 
+      ...skills.biVisualization,
+      icon: Database
+    },
+    { 
+      ...skills.dataModeling,
+      icon: Code2
+    }
   ];
 
   return (
@@ -28,21 +36,31 @@ const About = () => {
         </div>
 
         <div className="skills-section">
-          <h3 className="skills-title">Technical Skills</h3>
+          <h3 className="skills-title">Core Skill Areas</h3>
           <div className="skills-grid">
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               return (
                 <div key={index} className="skill-category">
                   <div className="category-header">
-                    <Icon size={24} className="category-icon" />
-                    <h4 className="category-title">{category.title}</h4>
+                    <Icon size={28} className="category-icon" />
+                    <div>
+                      <h4 className="category-title">{category.title}</h4>
+                      <p className="category-subtitle">{category.subtitle}</p>
+                    </div>
                   </div>
                   <ul className="skill-list">
                     {category.skills.map((skill, idx) => (
                       <li key={idx} className="skill-item">{skill}</li>
                     ))}
                   </ul>
+                  <div className="tools-section">
+                    <div className="tools-chips">
+                      {category.tools.map((tool, idx) => (
+                        <span key={idx} className="tool-chip">{tool}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               );
             })}
