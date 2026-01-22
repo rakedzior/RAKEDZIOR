@@ -91,7 +91,7 @@ export const experience = [
     period: "Apr 2022 - Present",
     achievements: [
       "Delivered sanctions compliance analytics across 4 countries, increasing accuracy by ~22% and reducing investigative workflow from multi-week to one-week cycle",
-      "Led Poland analytics team in Sectorial Exposures Review uncovering $9B exposure discrepancies across 6 sectors, prompting senior management remediation plans",
+      "Led the Poland Analytics Team in a comprehensive Sectorial Exposures review for a multi-billion dollar portfolio, uncovering material discrepancies across high-transition-risk sectors. Identified critical data integrity gaps, driving enterprise-wide remediation and strengthening governance controls",
       "Developed ML model to predict clients entering forbearance, enabling proactive risk identification",
       "Reconciled Business Services data across systems, identifying 5 of 248 services lacking coverage and building exploratory dashboard for gap investigation",
       "Created secure Python/Flask data analysis tool for non-technical users, bypassing software restrictions while maintaining data governance"
