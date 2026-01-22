@@ -265,7 +265,8 @@ export const portfolio = [
   },
   {
     id: 6,
-    title: "Probabilistic Aging & De-Aging Model",
+    title: "Aging & De-Aging Claims",
+    subtitle: "Analytics Model",
     industry: "Pharmaceutical",
     description: "Designed end-to-end data-driven aging framework addressing a core financial problem in Medicaid rebate dispute management: ~80% of disputed claims remain indefinitely in Open or Impasse states, creating cash flow uncertainty under pay-and-chase model. Solution replaces static aging assumptions with transparent, auditable, extensible analytical model built in Snowflake and dbt, enabling manufacturers to withhold rebate payments probabilistically based on empirical state response behavior.",
     problem: "Approximately 80% of disputed noncompliant claims remained indefinitely in Open or Impasse states, creating significant financial and operational challenges. Clients were hesitant to adopt aging-based invoicing due to perceived risks of late adverse state resolutions, CE verification reversals, and unpredictable shifts in state response behavior over time. Existing aging logic relied on mean days-to-response metrics, which inadequately captured tail risk and failed to account for evolving state behavior patterns. The lack of a robust, auditable framework prevented adoption of probabilistic invoicing strategies that could materially improve cash flow and reduce unnecessary rebate payments.",
