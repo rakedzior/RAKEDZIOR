@@ -16,8 +16,8 @@ export const personalInfo = {
 
 export const aboutMe = {
   intro: "I'm a Data Analyst & Analytics Engineer with 5+ years of experience in analytics, data modeling, and BI delivery. I specialize in building ELT pipelines, dimensional models, and KPI dashboards that drive operational and decision analytics.",
-  expertise: "My expertise lies in transforming raw data into strategic insights through modern data stack technologies. I work in a task-based consulting model, supporting stakeholders with operational reporting, reconciliation workflows, and data validation processes. I'm passionate about building scalable data solutions that empower teams to make data-driven decisions.",
-  lookingFor: "I'm seeking opportunities to leverage my skills in Python, SQL, Snowflake, and Tableau to build analytics solutions that create measurable business impact. I thrive in environments where I can collaborate with cross-functional teams and deliver insights that drive strategic decision-making."
+  expertise: "My expertise lies in transforming raw data into strategic insights through modern data stack technologies. I work in a task-based consulting model, supporting stakeholders with operational reporting, reconciliation workflows, and data validation processes. With strong leadership and stakeholder management skills, I've consistently maintained direct contact with internal stakeholders across multiple departments and geographies, translating complex technical concepts into business value and building consensus around data-driven initiatives.",
+  lookingFor: "I'm seeking opportunities to leverage my skills in Python, SQL, Snowflake, and Tableau to build analytics solutions that create measurable business impact. I thrive in environments where I can collaborate with cross-functional teams, lead analytical initiatives, and deliver insights that drive strategic decision-making."
 };
 
 export const skills = {
