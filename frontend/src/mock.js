@@ -172,7 +172,8 @@ export const portfolio = [
   },
   {
     id: 2,
-    title: "Covered Entity Onboarding Dashboard",
+    title: "Covered Entity Onboarding",
+    subtitle: "Dashboard",
     industry: "Pharmaceutical",
     description: "Built interactive CE onboarding visibility dashboard tracking 24,000+ Covered Entities across 4-gate onboarding process. Matrix-based design with drill-down capabilities enables operational teams to identify bottlenecks and prioritize follow-ups, improving onboarding transparency and reducing stagnation.",
     problem: "Internal Kalderos teams lacked visibility into Covered Entities (CE) onboarding process in Truzo system. Unable to identify CEs stuck in specific onboarding steps or track time-to-completion across the pipeline. Manual investigation required to understand bottlenecks, preventing data-driven prioritization of follow-ups and stakeholder outreach.",
