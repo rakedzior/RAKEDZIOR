@@ -210,7 +210,7 @@ export const portfolio = [
       "Established analytics-led assurance framework for complex regulatory environments",
       "Enhanced stakeholder understanding of data quality impact through clear, actionable insights"
     ],
-    thumbnail: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/ocol8nen_tr6.png"
   },
   {
     id: 4,
