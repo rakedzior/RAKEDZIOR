@@ -18,6 +18,9 @@ const Projects = () => {
           <p className="section-description">
             A selection of analytics projects delivering measurable business impact
           </p>
+          <p className="data-disclaimer">
+            <strong>Data Privacy Notice:</strong> All data, metrics, and identifiers displayed in portfolio projects have been anonymized to protect confidential client information. Some visuals may have been distorted due to the anonymization process.
+          </p>
         </div>
 
         <div className="projects-grid">
