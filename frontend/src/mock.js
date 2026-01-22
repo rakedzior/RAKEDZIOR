@@ -150,17 +150,28 @@ export const portfolio = [
     id: 1,
     title: "Noncompliance KPI Metrics Dashboard",
     industry: "Pharmaceutical",
-    description: "Comprehensive dashboard combining Excel, SQL, and Tableau to track 10+ compliance KPIs, dispute outcomes, and resolution strategies. Enhanced operational insight and accelerated decision-making for pharmaceutical compliance teams.",
-    problem: "Compliance teams were managing KPI data across multiple Excel files and systems, leading to inconsistent reporting and delayed insights into dispute resolutions.",
-    approach: "Centralized data sources into Snowflake, built ELT pipelines with dbt, and designed an integrated Tableau dashboard with drill-down capabilities.",
-    tools: ["Tableau", "SQL", "Snowflake", "dbt Cloud", "Excel"],
+    description: "Rebuilt MDRP compliance dashboard with pre-aggregated data model, reducing load times by 60% and filter response by 90%. Dashboard tracks 10+ KPIs across noncompliance, disputes, and resolutions, supporting internal teams, Customer Success, and Quarterly Business Reviews.",
+    problem: "Legacy dashboard suffered from severe performance issues due to 45M row dataset with 5 separate data sources requiring multiple joins. Load times exceeded 10 seconds, filters took 20+ seconds to apply, and users experienced frequent timeouts. The raw claim granularity made analysis difficult and hindered strategic decision-making for Customer Success teams.",
+    approach: "Created pre-aggregated KPI model (agg_claims_kpis) consolidating claims data across key business dimensions (client, program, product, CE, state, time). Reduced dataset from 45M to 1.5M rows while maintaining full analytical depth. Implemented standardized KPI flag logic via seed mappings and rebuilt 9 dashboard reports with optimized data structure. Prototyped and benchmarked performance before production deployment.",
+    tools: ["Tableau", "SQL", "Snowflake", "dbt Cloud", "Data Modeling"],
     outcomes: [
-      "Unified view of 10+ compliance KPIs",
-      "Reduced report generation time by 60%",
-      "Improved stakeholder visibility into dispute patterns",
-      "Enabled proactive compliance risk management"
+      "Reduced dashboard load times by 60% (from ~10s to ~4s)",
+      "Improved filter response time by 90% (from ~20s to ~2s)",
+      "Consolidated 5 data sources into single pre-aggregated model",
+      "Reduced row count from 45M to 1.5M while preserving analytical capability",
+      "Enhanced Customer Success team's ability to make strategic CE outreach decisions",
+      "Dashboard now used across Internal Operations, Customer Success, and executive QBRs",
+      "Established reusable pattern for optimizing other dashboards with similar performance issues"
     ],
-    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/e3zvkx2x_image.png",
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/e3zvkx2x_image.png",
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/irk8g1ar_image.png",
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/va9su7aq_image.png",
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/qjq6msk8_image.png",
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/jj468675_image.png",
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/ngy4mpdw_image.png"
+    ]
   },
   {
     id: 2,
