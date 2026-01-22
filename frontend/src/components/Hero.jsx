@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mail, Download } from 'lucide-react';
+import { Eye, Download } from 'lucide-react';
 import { personalInfo } from '../mock';
 import { Button } from './ui/button';
 import './Hero.css';
@@ -49,41 +49,33 @@ const Hero = () => {
 
       <div className="hero-bottom">
         <div className="hero-bottom-container">
-          <div className="hero-role">
+          <div className="hero-bottom-left">
             <h2 className="role-title">{personalInfo.title}</h2>
-            <div className="tech-stack">
-              <span className="tech-label">Tech Stack:</span>
-              <div className="tech-chips">
-                {techStack.map((tech, index) => (
-                  <span key={index} className="tech-chip">{tech}</span>
-                ))}
-              </div>
+            <div className="hero-actions">
+              <Button 
+                onClick={() => scrollToSection('portfolio')} 
+                className="btn-primary"
+              >
+                <Eye className="btn-icon" size={18} />
+                View Portfolio
+              </Button>
+              <Button 
+                onClick={() => window.open('https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/uncbcd8u_Rafal_Kedzior_Resume_2026.pdf', '_blank')}
+                className="btn-primary"
+              >
+                <Download size={18} />
+                Download Resume
+              </Button>
             </div>
           </div>
 
-          <div className="hero-actions">
-            <Button 
-              onClick={() => scrollToSection('portfolio')} 
-              className="btn-primary"
-            >
-              View Portfolio
-              <ArrowRight className="btn-icon" size={18} />
-            </Button>
-            <Button 
-              onClick={() => window.open('https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/uncbcd8u_Rafal_Kedzior_Resume_2026.pdf', '_blank')}
-              className="btn-primary"
-            >
-              <Download size={18} />
-              Download Resume
-            </Button>
-            <Button 
-              onClick={() => window.location.href = `mailto:${personalInfo.email}`}
-              variant="outline"
-              className="btn-secondary"
-            >
-              <Mail size={18} />
-              Contact
-            </Button>
+          <div className="tech-stack-centered">
+            <span className="tech-label">Tech Stack:</span>
+            <div className="tech-chips">
+              {techStack.map((tech, index) => (
+                <span key={index} className="tech-chip">{tech}</span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
