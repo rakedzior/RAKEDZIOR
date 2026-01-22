@@ -91,12 +91,21 @@
 
 .image-wrapper {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   overflow: hidden;
   background: linear-gradient(135deg, #2a3038 0%, #1a1d24 100%);
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, transparent 60%, rgba(27, 31, 36, 0.8) 100%);
+  pointer-events: none;
 }
 
 .image-wrapper img {
