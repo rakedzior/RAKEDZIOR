@@ -214,19 +214,27 @@ export const portfolio = [
   },
   {
     id: 4,
-    title: "Forbearance Reconciliation",
+    title: "Review Capacity Dashboard",
     industry: "Banking",
-    description: "Consolidated fragmented forbearance data from 8+ systems (GCP, Teradata, data lakes), surfacing 13% control exceptions and resolving 50% unmatched customer names using ML-enhanced matching logic.",
-    problem: "Forbearance data scattered across 8+ systems created reconciliation challenges and limited visibility into control effectiveness.",
-    approach: "Integrated data from multiple sources, applied ML-based name matching algorithms, and built reconciliation dashboards with exception tracking.",
-    tools: ["Python", "SQL", "GCP", "Teradata", "Machine Learning"],
+    description: "Built comprehensive capacity planning and utilization dashboard consolidating data from 6 internal Helios data sources. Weekly-refreshed dashboard serves as operational backbone for resource allocation, enabling drill-down from program-level metrics to individual employee utilization across 845,091 review hours and 312 planned reviews.",
+    problem: "Review capacity planning relied on fragmented data across 6 separate systems within Helios, making it difficult to understand true resource utilization, identify bottlenecks, or optimize assignments. No unified view existed for tracking planned vs actual reviews, employee workload distribution, or program-level capacity constraints. Manual reconciliation of assignment data was time-consuming and prone to inconsistency, preventing data-driven staffing decisions.",
+    approach: "Consolidated 6 Helios data sources through complex merge logic to create unified capacity model:\n\n• Integrated review planning data (planned reviews, F/LB reviews, targets)\n• Merged employee assignment data across multiple review categories (HR Audit, IT Review, Sunity Audit, etc.)\n• Consolidated actual review hours and completion metrics\n• Built multi-level aggregation supporting drill-down from program → project → employee\n• Implemented weekly automated refresh pipeline ensuring data currency\n\nDesigned interactive dashboard with multiple distribution views: by outcome (Rodigon Cltoter Assoverance), by review type (Scotten Recline Assurance), by authority entity, and by plan activity. Created flexible filtering enabling users to analyze specific projects and employee assignments. Developed open findings tracking module showing assigned, pending MAP3, and other categories.",
+    tools: ["Tableau", "SQL", "Helios", "Data Integration", "ETL"],
     outcomes: [
-      "Consolidated data from 8+ systems",
-      "Surfaced 13% control exceptions",
-      "Resolved 50% unmatched customer records",
-      "Improved data quality and governance"
+      "Unified 6 fragmented Helios data sources into single operational dashboard",
+      "Enabled tracking of 845,091 actual review hours vs 724.99% recommendation target",
+      "Provided visibility into 312 planned reviews with 248 actual reviews (below plan by 64)",
+      "Created drill-down capability from program-level metrics to individual employee utilization",
+      "Established weekly automated refresh ensuring stakeholders work with current data",
+      "Improved resource allocation decisions through distribution analysis across 10+ review categories",
+      "Tracked 540 assigned findings with clear visibility into pending MAP3 (32) and other categories (178)",
+      "Became operational backbone for capacity planning and utilization management across organization"
     ],
-    thumbnail: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/q36k332y_image.png",
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/q36k332y_image.png"
+    ],
+    disableZoom: true
   },
   {
     id: 5,
