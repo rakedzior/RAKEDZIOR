@@ -15,7 +15,7 @@ const Hero = () => {
     }
   };
 
-  const techStack = ['Python', 'SQL', 'Snowflake', 'dbt', 'Tableau', 'Qlik', 'Power BI'];
+  const techStack = ['Python', 'SQL', 'Snowflake', 'dbt', 'Tableau', 'Qlik'];
 
   return (
     <section id="home" className="hero">
