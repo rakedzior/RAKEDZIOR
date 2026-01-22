@@ -121,6 +121,17 @@
   font-weight: 700;
   color: #FAFAFA;
   line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-subtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #075FE4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .project-description {
