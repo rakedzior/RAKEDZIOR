@@ -21,10 +21,49 @@ export const aboutMe = {
 };
 
 export const skills = {
-  analytics: ["Data Analysis", "Statistical Modeling", "KPI Development", "Business Intelligence", "Data Validation"],
-  dataModeling: ["Dimensional Modeling", "Data Warehousing", "ELT/ETL Pipelines", "Data Quality", "dbt Cloud"],
-  visualization: ["Tableau", "Qlik", "Dashboard Design", "Data Storytelling", "Report Automation"],
-  engineering: ["Python", "SQL", "PySpark", "Snowflake", "GCP", "Git", "JIRA", "Confluence"]
+  analytics: {
+    title: "Analytics",
+    subtitle: "Translating raw data into validated insights and risk-aware decisions",
+    skills: [
+      "Exploratory Data Analysis (EDA)",
+      "KPI Definition and Tracking",
+      "Exception / Anomaly Detection",
+      "Reconciliation and Data Validation",
+      "Root Cause Analysis",
+      "Business Logic Translation (policy → metrics)",
+      "Statistical Analysis",
+      "Predictive Modeling (basic ML where relevant)",
+      "Ad-hoc Analysis for Stakeholders"
+    ],
+    tools: ["Python (pandas, NumPy, scikit-learn)", "SQL", "Excel (advanced)"]
+  },
+  biVisualization: {
+    title: "BI & Visualization",
+    subtitle: "Building fast, decision-ready dashboards used by real teams",
+    skills: [
+      "Dashboard Design (executive & operational)",
+      "KPI Frameworks",
+      "Performance Optimization (load time, filters)",
+      "Stakeholder-focused Storytelling",
+      "Self-service BI Enablement",
+      "Data Usability & Adoption"
+    ],
+    tools: ["Tableau", "Qlik Sense", "Power BI", "UX Patterns for Analytics"]
+  },
+  dataModeling: {
+    title: "Data Modelling & Analytics Engineering",
+    subtitle: "Designing analytics-ready data layers that scale",
+    skills: [
+      "Dimensional Modeling (facts & dimensions)",
+      "ELT / Transformation Pipelines",
+      "dbt Models (staging → intermediate → marts)",
+      "Data Quality Checks & Testing",
+      "Schema Design for Analytics",
+      "Data Lineage & Documentation",
+      "Performance-aware SQL Design"
+    ],
+    tools: ["Snowflake", "dbt Cloud", "SQL", "Git", "GCP"]
+  }
 };
 
 export const experience = [
