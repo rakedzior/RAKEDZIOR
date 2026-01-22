@@ -212,7 +212,8 @@ export const portfolio = [
       "Strengthened data lineage transparency and governance practices",
       "Established analytics-led assurance framework for complex regulatory environments"
     ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/opqe6n0p_TR6_FINAL.png"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/opqe6n0p_TR6_FINAL.png",
+    disableZoom: true
   },
   {
     id: 4,
