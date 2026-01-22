@@ -216,7 +216,8 @@ export const portfolio = [
   },
   {
     id: 4,
-    title: "Review Capacity Dashboard",
+    title: "Review Capacity",
+    subtitle: "Dashboard",
     industry: "Banking",
     description: "Built comprehensive capacity planning and utilization dashboard consolidating data from 6 internal Helios data sources. Weekly-refreshed dashboard serves as operational backbone for resource allocation, enabling drill-down from program-level metrics to individual employee utilization across 845,091 review hours and 312 planned reviews.",
     problem: "Review capacity planning relied on fragmented data across 6 separate systems within Helios, making it difficult to understand true resource utilization, identify bottlenecks, or optimize assignments. No unified view existed for tracking planned vs actual reviews, employee workload distribution, or program-level capacity constraints. Manual reconciliation of assignment data was time-consuming and prone to inconsistency, preventing data-driven staffing decisions.",
