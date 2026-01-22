@@ -39,7 +39,10 @@ const Projects = () => {
               </div>
               <div className="project-content">
                 <div className="project-industry">{project.industry}</div>
-                <h3 className="project-title">{project.title}</h3>
+                <h3 className="project-title">
+                  {project.title}
+                  {project.subtitle && <span className="project-subtitle">{project.subtitle}</span>}
+                </h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tags">
                   {project.tools.slice(0, 3).map((tool, idx) => (
