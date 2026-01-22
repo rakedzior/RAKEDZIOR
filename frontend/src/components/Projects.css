@@ -223,8 +223,14 @@
   position: relative;
 }
 
+.modal-image:not(.zoomable) {
+  cursor: default;
+  pointer-events: none;
+}
+
 .modal-image.zoomable {
   cursor: zoom-in;
+  pointer-events: auto;
 }
 
 .modal-image.zoomable:hover .zoom-overlay {
