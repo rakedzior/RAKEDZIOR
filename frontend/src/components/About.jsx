@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart3, Database, Code2 } from 'lucide-react';
+import { BarChart3, Database, Code2, Award, Users, Target } from 'lucide-react';
 import { aboutMe, skills } from '../mock';
 import './About.css';
 
@@ -19,6 +19,12 @@ const About = () => {
     }
   ];
 
+  const highlights = [
+    { icon: Award, label: "5+ Years", text: "Analytics Experience" },
+    { icon: Users, label: "Multi-Jurisdictional", text: "Stakeholder Management" },
+    { icon: Target, label: "Decision-Ready", text: "Insights & Dashboards" }
+  ];
+
   return (
     <section id="about" className="about">
       <div className="about-container">
@@ -28,10 +34,27 @@ const About = () => {
         </div>
 
         <div className="about-content">
-          <div className="about-text">
-            <p className="about-paragraph">{aboutMe.intro}</p>
-            <p className="about-paragraph">{aboutMe.expertise}</p>
-            <p className="about-paragraph">{aboutMe.lookingFor}</p>
+          <div className="about-highlights">
+            {highlights.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div key={index} className="highlight-card">
+                  <Icon size={28} className="highlight-icon" />
+                  <div className="highlight-text">
+                    <div className="highlight-label">{item.label}</div>
+                    <div className="highlight-value">{item.text}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="about-text-section">
+            <div className="about-text-card">
+              <p className="about-paragraph">{aboutMe.intro}</p>
+              <p className="about-paragraph">{aboutMe.expertise}</p>
+              <p className="about-paragraph emphasis">{aboutMe.lookingFor}</p>
+            </div>
           </div>
         </div>
 
