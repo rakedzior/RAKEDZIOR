@@ -79,7 +79,7 @@ export const experience = [
       "Built dashboards tracking 6,000+ Covered Entities lifecycle, improving onboarding transparency and reducing manual checks by 40%",
       "Refactored Tableau performance, reducing load time from 10s to 5s and filter time from 20s to 3s (~90% faster), accelerating revenue recovery workflows",
       "Designed end-to-end ELT pipelines in dbt Cloud (staging → intermediate → marts) modeling claims, dispute, and onboarding data in Snowflake",
-      "Identified ~83k aged claims from 600k+ dataset, supporting ~$80M potential revenue recovery"
+      "Identified tens of thousands of aged claims (~15% of open/impasse volume) as actionable recovery opportunities, representing approximately $80M in potential revenue"
     ]
   },
   {
