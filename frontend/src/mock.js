@@ -241,19 +241,27 @@ export const portfolio = [
   },
   {
     id: 5,
-    title: "Sanctions Compliance Analytics",
+    title: "Governance Oversight",
+    subtitle: "Web Application",
     industry: "Banking",
-    description: "Delivered multi-jurisdictional sanctions compliance analytics across Poland, Germany, India, and UAE. Produced exception findings and non-compliant entity lists, increasing accuracy by 22% and reducing investigative cycles from weeks to days.",
-    problem: "Manual sanctions screening processes across multiple jurisdictions were time-consuming, inconsistent, and prone to gaps in coverage.",
-    approach: "Built automated screening logic, created exception dashboards with drill-through capabilities, and established repeatable analytical workflows across regions.",
-    tools: ["SQL", "Python", "Tableau", "Excel"],
+    description: "Architected and developed full-stack Python Streamlit application replacing monolithic Excel-based QC governance workflow. Integrated SQL database with automated backups and connected BI dashboard enabling live compliance metrics, trend analysis, and regional governance insights for leadership oversight.",
+    problem: "Quality Control (QC) checks for Jira documentation were managed via offline Excel workbook, creating significant operational challenges. Legacy process was highly susceptible to human error, lacked version control, and provided no data security. Results were siloed, making it impossible for leadership to track historical trends or regional governance performance. Manual reporting of compliance metrics was time-consuming and error-prone.",
+    approach: "Architected full-stack internal tool to replace Excel workflow entirely:\n\n• Application Layer: Built Python Streamlit web application as user interface, querying master list of Jira issues and allowing QC Oversight Officers to select tickets, view granular details, and perform live validation checks\n• Database Layer: Designed normalized SQL database as persistent backend, performing real-time CRUD operations (Create, Read, Update, Delete) ensuring instant data commitment to server\n• Security & Redundancy: Implemented automated backup scripts ensuring data integrity and disaster recovery capabilities\n• Analytics Integration: Connected SQL backend to BI dashboard visualizing newly structured data\n\nDelivered complete solution as sole developer, handling all aspects from requirements gathering through deployment and user training.",
+    tools: ["Python", "Streamlit", "SQL", "BI Dashboarding", "CRUD Operations", "Database Design"],
     outcomes: [
-      "Increased compliance accuracy by ~22%",
-      "Reduced investigative workflow from multi-week to one-week cycle",
-      "Enabled data-driven risk prioritization",
-      "Improved cross-jurisdictional consistency"
+      "Replaced error-prone Excel workflow with version-controlled web application",
+      "Enabled live compliance metrics with automated calculation of % Conformed vs % Non-Conformed tickets",
+      "Provided trend analysis visualizing impact of new QC policies over time",
+      "Identified specific regions struggling with governance, enabling targeted training and remediation",
+      "Implemented real-time data persistence eliminating manual data entry errors",
+      "Established automated backup system ensuring data integrity and disaster recovery",
+      "Delivered measurable improvement in governance oversight through regional performance tracking"
     ],
-    thumbnail: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
+    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/jvyx7x9o_Governance.png",
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/jvyx7x9o_Governance.png"
+    ],
+    disableZoom: true
   },
   {
     id: 6,
