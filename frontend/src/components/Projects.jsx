@@ -119,6 +119,14 @@ const Projects = () => {
                   ))}
                 </ul>
               </div>
+
+              {selectedProject.note && (
+                <div className="modal-section data-note">
+                  <p className="note-text">
+                    <strong>Note:</strong> {selectedProject.note}
+                  </p>
+                </div>
+              )}
             </div>
           </DialogContent>
         </Dialog>
