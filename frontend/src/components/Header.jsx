@@ -63,7 +63,6 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo" onClick={() => navigate('/')}>
-          <span className="logo-text">RK</span>
         </div>
 
         <nav className="desktop-nav">
