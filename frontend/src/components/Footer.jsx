@@ -20,11 +20,11 @@ const Footer = () => {
           <div className="footer-links">
             <h4 className="footer-heading">Quick Links</h4>
             <ul className="links-list">
-              <li><a href="#home" className="footer-link">Home</a></li>
-              <li><a href="#about" className="footer-link">About</a></li>
-              <li><a href="#experience" className="footer-link">Experience</a></li>
-              <li><a href="#education" className="footer-link">Education</a></li>
-              <li><a href="#portfolio" className="footer-link">Portfolio</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/#home`} className="footer-link">Home</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/#about`} className="footer-link">About</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/#experience`} className="footer-link">Experience</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/#education`} className="footer-link">Education</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/#portfolio`} className="footer-link">Portfolio</a></li>
             </ul>
           </div>
 
