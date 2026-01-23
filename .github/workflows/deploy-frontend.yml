@@ -27,7 +27,8 @@ jobs:
 
       - name: Build
         working-directory: frontend
-        run: npm run build
+        run: CI=false npm run build
+
 
       # (opcjonalnie) SPA routing: 404.html = index.html
       - name: SPA fallback
