@@ -10,7 +10,7 @@ import { Toaster } from './components/ui/sonner';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL === '.' ? '' : process.env.PUBLIC_URL}>
         <Header />
         <Routes>
           <Route path="/" element={<Portfolio />} />
