@@ -10,34 +10,35 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // GitHub Pages subpath support (e.g. /RAKEDZIOR)
-  const base = process.env.PUBLIC_URL || '';
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (sectionId) => {
-    const doScroll = () => {
+    const scroll = () => {
       const element = document.getElementById(sectionId);
-      if (element) {
-        const offset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-      }
+      if (!element) return;
+
+      const offset = 80;
+      const y =
+        element.getBoundingClientRect().top +
+        window.pageYOffset -
+        offset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
     };
 
-    // If we are not on the homepage (under base), navigate there first
-    if (location.pathname !== `${base}/`) {
-      navigate(`${base}/`);
-      setTimeout(doScroll, 100);
+    // Jeśli nie jesteśmy na Home → przejdź na Home, potem scroll
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(scroll, 150);
     } else {
-      doScroll();
+      scroll();
     }
 
     setIsMobileMenuOpen(false);
@@ -45,7 +46,7 @@ const Header = () => {
 
   const handleNavigation = (item) => {
     if (item.isRoute) {
-      navigate(`${base}/contact`);
+      navigate('/contact');
       setIsMobileMenuOpen(false);
     } else {
       scrollToSection(item.id);
@@ -66,12 +67,9 @@ const Header = () => {
       <div className="header-container">
         <div
           className="logo"
-          onClick={() => navigate(`${base}/`)}
+          onClick={() => navigate('/')}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' || e.key === ' ') navigate(`${base}/`);
-          }}
           aria-label="Go to home"
         />
 
@@ -79,9 +77,9 @@ const Header = () => {
           {navItems.map((item) => (
             <button
               key={item.id}
-              onClick={() => handleNavigation(item)}
-              className="nav-link"
               type="button"
+              className="nav-link"
+              onClick={() => handleNavigation(item)}
             >
               {item.label}
             </button>
@@ -103,9 +101,9 @@ const Header = () => {
           {navItems.map((item) => (
             <button
               key={item.id}
-              onClick={() => handleNavigation(item)}
-              className="mobile-nav-link"
               type="button"
+              className="mobile-nav-link"
+              onClick={() => handleNavigation(item)}
             >
               {item.label}
             </button>
