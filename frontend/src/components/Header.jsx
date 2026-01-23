@@ -6,8 +6,12 @@ import './Header.css';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
+
+  // GitHub Pages subpath support (e.g. /RAKEDZIOR)
+  const base = process.env.PUBLIC_URL || '';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,18 +22,7 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          const offset = 80;
-          const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - offset;
-          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-        }
-      }, 100);
-    } else {
+    const doScroll = () => {
       const element = document.getElementById(sectionId);
       if (element) {
         const offset = 80;
@@ -37,13 +30,22 @@ const Header = () => {
         const offsetPosition = elementPosition + window.pageYOffset - offset;
         window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
       }
+    };
+
+    // If we are not on the homepage (under base), navigate there first
+    if (location.pathname !== `${base}/`) {
+      navigate(`${base}/`);
+      setTimeout(doScroll, 100);
+    } else {
+      doScroll();
     }
+
     setIsMobileMenuOpen(false);
   };
 
   const handleNavigation = (item) => {
     if (item.isRoute) {
-      navigate('/contact');
+      navigate(`${base}/contact`);
       setIsMobileMenuOpen(false);
     } else {
       scrollToSection(item.id);
@@ -62,8 +64,16 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="logo" onClick={() => navigate('/')}>
-        </div>
+        <div
+          className="logo"
+          onClick={() => navigate(`${base}/`)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') navigate(`${base}/`);
+          }}
+          aria-label="Go to home"
+        />
 
         <nav className="desktop-nav">
           {navItems.map((item) => (
@@ -71,16 +81,18 @@ const Header = () => {
               key={item.id}
               onClick={() => handleNavigation(item)}
               className="nav-link"
+              type="button"
             >
               {item.label}
             </button>
           ))}
         </nav>
 
-        <button 
+        <button
           className="mobile-menu-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
+          type="button"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -93,6 +105,7 @@ const Header = () => {
               key={item.id}
               onClick={() => handleNavigation(item)}
               className="mobile-nav-link"
+              type="button"
             >
               {item.label}
             </button>
