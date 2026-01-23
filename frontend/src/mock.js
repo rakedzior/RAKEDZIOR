@@ -9,7 +9,7 @@ export const personalInfo = {
   phone: "+48 790-591-100",
   linkedin: "https://www.linkedin.com/in/rafalkedzior",
   github: "https://github.com/rafalkedzior",
-  photo: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/2u3jlg3m_1761838013555.jpg",
+  photo: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/ebwngot6_Generated.png",
   yearsOfExperience: "5+",
   projectsCompleted: "100+"
 };
