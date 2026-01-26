@@ -121,7 +121,7 @@ const Projects = () => {
 
               <div className="modal-section">
                 <h4 className="section-heading">Approach</h4>
-                <p className="section-text">{selectedProject.approach}</p>
+                <p className="section-text section-text-multiline">{selectedProject.approach}</p>
               </div>
 
               <div className="modal-section">
