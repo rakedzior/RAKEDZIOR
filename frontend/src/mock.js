@@ -3,21 +3,26 @@
 export const personalInfo = {
   name: "Rafał Kędzior",
   title: "Data Analyst | BI Developer | Analytics Engineer",
-  tagline: "Turning complex data into decision-ready insights through analytics engineering and BI.",
+  tagline:
+    "Turning complex data into decision-ready insights through analytics engineering and BI.",
   location: "Cracow, Poland",
   email: "ra.kedzior@gmail.com",
   phone: "+48 790-591-100",
   linkedin: "https://www.linkedin.com/in/rafalkedzior",
   github: "https://github.com/rafalkedzior",
-  photo: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/ebwngot6_Generated.png",
+  photo:
+    "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/ebwngot6_Generated.png",
   yearsOfExperience: "5+",
   projectsCompleted: "100+"
 };
 
 export const aboutMe = {
-  whatIDo: "I'm a Data Analyst & Analytics Engineer with 5+ years of experience in analytics, data modeling, and BI delivery. I specialize in building ELT pipelines, dimensional models, and KPI dashboards that support operational and decision analytics.",
-  howIWork: "I transform raw data into strategic insights using modern data stack technologies. I work in a task-based consulting model, supporting stakeholders with operational reporting, reconciliation workflows, and data validation processes. I collaborate closely with teams across departments and geographies, translating complex technical concepts into business value and aligning stakeholders around data-driven initiatives.",
-  lookingFor: "I'm interested in roles where I can apply Python, SQL, Snowflake, and Tableau to build analytics solutions with measurable business impact — working closely with cross-functional teams and leading analytical initiatives that support strategic decision-making."
+  whatIDo:
+    "I'm a Data Analyst & Analytics Engineer with 5+ years of experience in analytics, data modeling, and BI delivery. I specialize in building ELT pipelines, dimensional models, and KPI dashboards that support operational and decision analytics.",
+  howIWork:
+    "I transform raw data into validated insights using modern data stack technologies. I work in a task-based consulting model, supporting stakeholders with operational reporting, reconciliation workflows, and data validation processes. I collaborate closely with teams across departments and geographies, translating complex technical concepts into business value and aligning stakeholders around data-driven initiatives.",
+  lookingFor:
+    "I'm interested in roles where I can apply Python, SQL, Snowflake, dbt Cloud, and Tableau to build analytics solutions with measurable business impact — working closely with cross-functional teams and leading analytical initiatives that support strategic decision-making."
 };
 
 export const skills = {
@@ -32,10 +37,9 @@ export const skills = {
       "Root Cause Analysis",
       "Business Logic Translation (policy → metrics)",
       "Statistical Analysis",
-      "Predictive Modeling (basic ML where relevant)",
       "Ad-hoc Analysis for Stakeholders"
     ],
-    tools: ["Python (pandas, NumPy, scikit-learn)", "SQL", "Excel (advanced)"]
+    tools: ["Python", "SQL", "Excel (advanced)"]
   },
   biVisualization: {
     title: "BI & Visualization",
@@ -48,10 +52,10 @@ export const skills = {
       "Self-service BI Enablement",
       "Data Usability & Adoption"
     ],
-    tools: ["Tableau", "Qlik Sense", "Power BI", "UX Patterns for Analytics"]
+    tools: ["Tableau", "Qlik Sense"]
   },
   dataModeling: {
-    title: "Data Modelling & Analytics Engineering",
+    title: "Data Modeling & Analytics Engineering",
     subtitle: "Designing analytics-ready data layers that scale",
     skills: [
       "Dimensional Modeling (facts & dimensions)",
@@ -62,230 +66,144 @@ export const skills = {
       "Data Lineage & Documentation",
       "Performance-aware SQL Design"
     ],
-    tools: ["Snowflake", "dbt Cloud", "SQL", "Git", "GCP"]
+    tools: ["Snowflake", "dbt Cloud", "SQL", "Git"]
   }
 };
 
-export const experience = [
-  {
-    id: 1,
-    title: "Data Analyst & Analytics Engineer",
-    company: "Kalderos",
-    type: "Contract",
-    location: "Boston, United States (Remote)",
-    period: "Oct 2024 - Feb 2026",
-    achievements: [
-      "Created a Noncompliance KPI Dashboard combining Excel/SQL/Tableau into one unified view, enhancing insight into 10+ KPIs, dispute outcomes, and resolution strategies",
-      "Built dashboards tracking 6,000+ Covered Entities lifecycle, improving onboarding transparency and reducing manual checks by 40%",
-      "Refactored Tableau performance, reducing load time from 10s to 5s and filter time from 20s to 3s (~90% faster), accelerating revenue recovery workflows",
-      "Designed end-to-end ELT pipelines in dbt Cloud (staging → intermediate → marts) modeling claims, dispute, and onboarding data in Snowflake",
-      "Identified tens of thousands of aged claims (~15% of open/impasse volume) as actionable recovery opportunities, representing approximately $80M in potential revenue"
-    ]
-  },
-  {
-    id: 2,
-    title: "Data Analytics Consultant",
-    company: "HSBC",
-    type: "Task-Based",
-    location: "Cracow, Poland",
-    period: "Apr 2022 - Present",
-    achievements: [
-      "Delivered sanctions compliance analytics across 4 countries, increasing accuracy by ~22% and reducing investigative workflow from multi-week to one-week cycle",
-      "Led the Poland Analytics Team in a comprehensive Sectorial Exposures review for a multi-billion dollar portfolio, uncovering material discrepancies across high-transition-risk sectors. Identified critical data integrity gaps, driving enterprise-wide remediation and strengthening governance controls",
-      "Developed ML model to predict clients entering forbearance, enabling proactive risk identification",
-      "Reconciled Business Services data across systems, identifying 5 of 248 services lacking coverage and building exploratory dashboard for gap investigation",
-      "Created secure Python/Flask data analysis tool for non-technical users, bypassing software restrictions while maintaining data governance"
-    ]
-  },
-  {
-    id: 3,
-    title: "Pricing Data Analyst",
-    company: "Verisk Analytics",
-    type: "Full-Time",
-    location: "Cracow, Poland",
-    period: "Oct 2020 - Mar 2022",
-    achievements: [
-      "Conducted quarterly pricing reviews for auto insurance products, validating completeness and pricing assumptions across hundreds of submissions",
-      "Automated validation workflows, reducing review time by ~40% and improving data quality for actuarial modeling",
-      "Coordinated pricing discussions between actuarial, underwriting, and data ops teams, reducing clarification cycles",
-      "Implemented anomaly detection using logistic regression to flag irregular loss cost patterns during pricing reviews"
-    ]
-  },
-  {
-    id: 4,
-    title: "Junior Financial Representative",
-    company: "Brown Brothers Harriman",
-    type: "Full-Time",
-    location: "Cracow, Poland",
-    period: "Oct 2019 - Sep 2020",
-    achievements: [
-      "Processed financial transactions and prepared recurring operational reports for institutional clients",
-      "Assisted in exception handling and reconciliation activities, ensuring accuracy and compliance",
-      "Contributed to procedure enhancements improving operational consistency and reducing manual dependencies"
-    ]
-  }
-];
-
-export const education = [
-  {
-    id: 1,
-    degree: "Master of Science",
-    field: "Information Technology & Econometrics",
-    university: "AGH University of Kraków",
-    location: "Cracow, Poland",
-    period: "2018 - 2020"
-  },
-  {
-    id: 2,
-    degree: "Bachelor of Science",
-    field: "Information Technology & Econometrics",
-    university: "AGH University of Kraków",
-    location: "Cracow, Poland",
-    period: "2015 - 2018"
-  }
-];
-
 export const portfolio = [
-  {
-    id: 1,
-    title: "Noncompliance KPI Metrics",
-    subtitle: "Dashboard",
-    industry: "Pharmaceutical",
-    description: "Rebuilt MDRP compliance dashboard with pre-aggregated data model, reducing load times by 60% and filter response by 90%. Dashboard tracks 10+ KPIs across noncompliance, disputes, and resolutions, supporting internal teams, Customer Success, and Quarterly Business Reviews.",
-    problem: "Legacy dashboard suffered from severe performance issues due to 45M row dataset with 5 separate data sources requiring multiple joins. Load times exceeded 10 seconds, filters took 20+ seconds to apply, and users experienced frequent timeouts. The raw claim granularity made analysis difficult and hindered strategic decision-making for Customer Success teams.",
-    approach: "Created pre-aggregated KPI model consolidating claims data across key business dimensions:\n\n• Reduced dataset from 45M to 1.5M rows while maintaining full analytical depth\n• Implemented standardized KPI flag logic via seed mappings\n• Rebuilt 9 dashboard reports with optimized data structure\n• Prototyped and benchmarked performance before production deployment\n\nCentralized five separate data sources into single unified model, enabling faster filtering and drill-down analysis across clients, programs, products, CEs, states, and time periods.",
-    tools: ["Tableau", "SQL", "Snowflake", "dbt Cloud"],
-    outcomes: [
-      "Reduced dashboard load times by 60% (from ~10s to ~4s)",
-      "Improved filter response time by 90% (from ~20s to ~2s)",
-      "Consolidated 5 data sources into single pre-aggregated model",
-      "Reduced row count from 45M to 1.5M while preserving analytical capability",
-      "Enhanced Customer Success team's ability to make strategic CE outreach decisions",
-      "Dashboard now used across Internal Operations, Customer Success, and executive QBRs",
-      "Established reusable pattern for optimizing other dashboards with similar performance issues"
-    ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/8k6h2ojk_proper.png",
-    screenshots: [
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/8k6h2ojk_proper.png"
-    ],
-    disableZoom: true
-  },
-  {
-    id: 2,
-    title: "Covered Entity Onboarding",
-    subtitle: "Dashboard",
-    industry: "Pharmaceutical",
-    description: "Built interactive CE onboarding visibility dashboard tracking 24,000+ Covered Entities across 4-gate onboarding process. Matrix-based design with drill-down capabilities enables operational teams to identify bottlenecks and prioritize follow-ups, improving onboarding transparency and reducing stagnation.",
-    problem: "Internal Kalderos teams lacked visibility into Covered Entities (CE) onboarding process in Truzo system. Unable to identify CEs stuck in specific onboarding steps or track time-to-completion across the pipeline. Manual investigation required to understand bottlenecks, preventing data-driven prioritization of follow-ups and stakeholder outreach.",
-    approach: "Designed interactive matrix visualization showing onboarding gates vs. Days Since Last Activity buckets. Built two dbt data models:\n\n• Gate x Day Matrix: Generated all gate/day combinations with CE counts for each cell, including empty ones for full landscape visibility\n• CE Detail View: Provided drill-down to individual CE information with key metrics\n\nImplemented show/hide switches for empty gates/days/combinations and multi-attribute filters. Added minimal context-based instructions for user guidance. Solution designed for scalability and operational efficiency.",
-    tools: ["Tableau", "SQL", "Snowflake", "dbt Cloud"],
-    outcomes: [
-      "Provided end-to-end visibility of 24,000+ CE onboarding activities",
-      "Enabled quick identification of stagnant CEs (752 in progress, 2,175 completed)",
-      "Reduced manual investigation time through interactive drill-down from matrix to CE details",
-      "Supported data-driven prioritization of onboarding follow-ups and Customer Success outreach",
-      "Designed scalable solution adaptable to operational process changes",
-      "Delivered actionable insights for operational efficiency improvements"
-    ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/0h3sly3e_Dashboard%20Ready.png",
-    screenshots: [
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/0h3sly3e_Dashboard%20Ready.png"
-    ],
-    disableZoom: true
-  },
-  {
-    id: 3,
-    title: "Sectorial Exposures",
-    subtitle: "Analytics Review",
-    industry: "Banking",
-    description: "Led analytics for Tier 1 Global Bank's High Transition Risk Sectors climate risk reporting initiative, covering multi-billion dollar portfolio across key global markets. Identified structural data quality issues affecting material exposure discrepancies, prompting enterprise-wide remediation and strengthened governance controls.",
-    problem: "Climate-related regulatory reporting relied on complex upstream reference data with inconsistent entity hierarchies and sector classifications across global portfolios. The underlying data represented exposures at multi-billion scale, where accuracy, consistency, and traceability were critical for regulatory compliance. Misalignment in how entities were grouped or classified could influence reported exposures at material scale, creating regulatory and reputational risk.",
-    approach: "Applied analytics-driven assurance methodology combining:\n\n• Large-scale data analysis to detect inconsistencies in entity hierarchies and sector attributes across EMEA and APAC portfolios\n• Sample-based validation across higher-risk and standard portfolios\n• Cross-source comparison of key reference data used for aggregation\n• End-to-end review of data lineage from source systems to regulatory outputs\n\nPerformed iterative analysis across reporting cycles, distinguishing structural consistency challenges (entity grouping) from classification accuracy challenges (sector attributes). Executed root-cause analysis to separate data modeling issues from attribute-level errors.",
-    tools: ["Python", "SQL", "Qlik", "Excel"],
-    outcomes: [
-      "Uncovered material exposure discrepancies across 6 high-transition-risk sectors",
-      "Identified critical data integrity issues requiring senior management attention and remediation",
-      "Prompted enterprise-wide strengthening of exposure reporting controls across jurisdictions",
-      "Improved confidence in climate-related regulatory reporting for large global portfolio",
-      "Reduced risk of material misstatement in sector-level ESG disclosures",
-      "Strengthened data lineage transparency and governance practices",
-      "Established analytics-led assurance framework for complex regulatory environments"
-    ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/opqe6n0p_TR6_FINAL.png",
-    disableZoom: true
-  },
-  {
-    id: 4,
-    title: "Review Capacity",
-    subtitle: "Dashboard",
-    industry: "Banking",
-    description: "Built comprehensive capacity planning and utilization dashboard consolidating data from 6 internal Helios data sources. Weekly-refreshed dashboard serves as operational backbone for resource allocation, enabling drill-down from program-level metrics to individual employee utilization across 845,091 review hours and 312 planned reviews.",
-    problem: "Review capacity planning relied on fragmented data across 6 separate systems within Helios, making it difficult to understand true resource utilization, identify bottlenecks, or optimize assignments. No unified view existed for tracking planned vs actual reviews, employee workload distribution, or program-level capacity constraints. Manual reconciliation of assignment data was time-consuming and prone to inconsistency, preventing data-driven staffing decisions.",
-    approach: "Consolidated 6 Helios data sources through complex merge logic to create unified capacity model:\n\n• Integrated review planning data (planned reviews, F/LB reviews, targets)\n• Merged employee assignment data across multiple review categories (HR Audit, IT Review, Sunity Audit, etc.)\n• Consolidated actual review hours and completion metrics\n• Built multi-level aggregation supporting drill-down from program → project → employee\n• Implemented weekly automated refresh pipeline ensuring data currency\n\nDesigned interactive dashboard with multiple distribution views: by outcome (Rodigon Cltoter Assoverance), by review type (Scotten Recline Assurance), by authority entity, and by plan activity. Created flexible filtering enabling users to analyze specific projects and employee assignments. Developed open findings tracking module showing assigned, pending MAP3, and other categories.",
-    tools: ["Qlik", "SQL", "Helios", "Python"],
-    outcomes: [
-      "Unified 6 fragmented Helios data sources into single operational dashboard",
-      "Enabled tracking of 845,091 actual review hours vs 724.99% recommendation target",
-      "Provided visibility into 312 planned reviews with 248 actual reviews (below plan by 64)",
-      "Created drill-down capability from program-level metrics to individual employee utilization",
-      "Established weekly automated refresh ensuring stakeholders work with current data",
-      "Improved resource allocation decisions through distribution analysis across 10+ review categories",
-      "Tracked 540 assigned findings with clear visibility into pending MAP3 (32) and other categories (178)",
-      "Became operational backbone for capacity planning and utilization management across organization"
-    ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/q36k332y_image.png",
-    screenshots: [
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/q36k332y_image.png"
-    ],
-    disableZoom: true
-  },
-  {
-    id: 5,
-    title: "Governance Oversight",
-    subtitle: "Web Application",
-    industry: "Banking",
-    description: "Architected and developed full-stack Python Streamlit application replacing monolithic Excel-based QC governance workflow. Integrated SQL database with automated backups and connected BI dashboard enabling live compliance metrics, trend analysis, and regional governance insights for leadership oversight.",
-    problem: "Quality Control (QC) checks for Jira documentation were managed via offline Excel workbook, creating significant operational challenges. Legacy process was highly susceptible to human error, lacked version control, and provided no data security. Results were siloed, making it impossible for leadership to track historical trends or regional governance performance. Manual reporting of compliance metrics was time-consuming and error-prone.",
-    approach: "Architected full-stack internal tool to replace Excel workflow entirely:\n\n• Application Layer: Built Python Streamlit web application as user interface, querying master list of Jira issues and allowing QC Oversight Officers to select tickets, view granular details, and perform live validation checks\n• Database Layer: Designed normalized SQL database as persistent backend, performing real-time CRUD operations (Create, Read, Update, Delete) ensuring instant data commitment to server\n• Security & Redundancy: Implemented automated backup scripts ensuring data integrity and disaster recovery capabilities\n• Analytics Integration: Connected SQL backend to BI dashboard visualizing newly structured data\n\nDelivered complete solution as sole developer, handling all aspects from requirements gathering through deployment and user training.",
-    tools: ["Python", "Streamlit", "SQL", "Qlik", "Excel"],
-    outcomes: [
-      "Replaced error-prone Excel workflow with version-controlled web application",
-      "Enabled live compliance metrics with automated calculation of % Conformed vs % Non-Conformed tickets",
-      "Provided trend analysis visualizing impact of new QC policies over time",
-      "Identified specific regions struggling with governance, enabling targeted training and remediation",
-      "Implemented real-time data persistence eliminating manual data entry errors",
-      "Established automated backup system ensuring data integrity and disaster recovery",
-      "Delivered measurable improvement in governance oversight through regional performance tracking"
-    ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/jvyx7x9o_Governance.png",
-    screenshots: [
-      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/jvyx7x9o_Governance.png"
-    ],
-    disableZoom: true
-  },
+  // 1️⃣ Flagship — differentiator
   {
     id: 6,
     title: "Aging & De-Aging Claims",
     subtitle: "Analytics Model",
     industry: "Pharmaceutical",
-    description: "Designed end-to-end data-driven aging framework addressing a core financial problem in Medicaid rebate dispute management: ~80% of disputed claims remain indefinitely in Open or Impasse states, creating cash flow uncertainty under pay-and-chase model. Solution replaces static aging assumptions with transparent, auditable, extensible analytical model built in Snowflake and dbt, enabling manufacturers to withhold rebate payments probabilistically based on empirical state response behavior.",
-    problem: "Approximately 80% of disputed noncompliant claims remained indefinitely in Open or Impasse states, creating significant financial and operational challenges. Clients were hesitant to adopt aging-based invoicing due to perceived risks of late adverse state resolutions, CE verification reversals, and unpredictable shifts in state response behavior over time. Existing aging logic relied on mean days-to-response metrics, which inadequately captured tail risk and failed to account for evolving state behavior patterns. The lack of a robust, auditable framework prevented adoption of probabilistic invoicing strategies that could materially improve cash flow and reduce unnecessary rebate payments.",
-    approach: "Performed comprehensive 7-quarter retrospective analysis using claim audit logs to simulate point-in-time aging decisions and quantify true de-aging risk:\n\n• Reconstructed claim status as-of historical analysis dates to simulate real-world aging decisions\n• Derived state-specific response distributions across multiple percentiles (average, median, 75th, 90th)\n• Tracked CE verification timing relative to aging thresholds to identify reversal patterns\n• Measured post-aging outcomes including MFR wins, MFR losses, CE verifications, and continued aging claims\n• Analysis demonstrated aging risk materially differs between Open vs Impasse claims, and states increasingly respond later\n\nImplemented production-grade aging lifecycle model with three core design elements:\n\n• Dynamic Aging Qualification: Claims qualify as aged only after exceeding state-aware threshold (later of 548-day baseline or state-specific average response time), balancing conservatism with adaptability\n• Explicit Lifecycle Management: Formal aging/de-aging workflow with strict temporal guarantees—aging triggered only when claim is Open/Impasse and date ≥ qualification threshold; de-aging allowed only for controlled resolution statuses occurring after both qualification date and first aging timestamp\n• Open → Impasse Transition Tracking: Captured first valid transition to Impasse after aging for risk stratification and temporal analysis of state behavior\n\nBuilt incremental dbt models (aged_claims_daily with merge strategy, snapshot_aged_claims_quarterly) with idempotent logic preserving first-event semantics. Implemented comprehensive dbt tests enforcing lifecycle integrity: no premature aging/de-aging, chronological consistency, prevention of future-dated records, and requirement that de-aging cannot occur without prior aging.",
-    tools: ["Snowflake", "dbt Cloud", "SQL", "Tableau"],
+    description:
+      "Designed a data-driven aging framework for Medicaid rebate disputes, where pharmaceutical manufacturers may be charged duplicate discounts. When an incorrect rebate is suspected, Good Faith Inquiry (GFI) claims are sent to Covered Entities or states for validation. If no response is received after a state-aware threshold, the claim is classified as Aged and invoiced; any later response triggers controlled De-Aging.",
+    problem:
+      "A large share of disputed claims remained indefinitely unresolved, creating cash flow uncertainty under a pay-and-chase model. Existing mean-based aging logic failed to capture tail risk and evolving response behavior, limiting adoption of data-driven invoicing strategies.",
+    approach:
+      "Built an auditable aging/de-aging lifecycle using historical claim audit logs to simulate point-in-time decisions:\n\n• Reconstructed claim status as-of historical analysis dates\n• Derived state-specific response distributions across multiple percentiles\n• Measured post-aging outcomes and separated risk profiles for Open vs Impasse claims\n\nImplemented a production-grade lifecycle with state-aware thresholds, explicit aging/de-aging controls, and Open → Impasse transition tracking. Delivered incremental dbt models with idempotent logic and comprehensive tests enforcing lifecycle integrity.",
     outcomes: [
-      "Demonstrated aging should be limited to Open claims under current state behavior patterns",
-      "Quantified true risk of de-aging through 7-quarter historical simulation across multiple scenarios",
-      "Proved more restrictive thresholds (90th percentile) reduce absolute loss dollars vs average-based logic",
-      "Established scalable foundation for probabilistic invoicing and risk-weighted credit strategies",
-      "Delivered production-grade, auditable aging framework suitable for regulatory and financial scrutiny",
-      "Enabled temporal analysis revealing states increasingly respond later, often converting Open claims to Impasse rather than resolving",
-      "Implemented comprehensive data quality controls through dbt tests enforcing lifecycle integrity and chronological consistency",
-      "Provided quantitative evidence addressing client concerns around adverse outcomes and adoption hesitancy",
-      "Created extensible framework supporting future ML-based de-aging prediction models"
+      "Quantified de-aging risk through historical simulation",
+      "Demonstrated that conservative thresholds reduce loss exposure",
+      "Delivered an auditable framework suitable for financial scrutiny",
+      "Enabled empirical decision-making for invoicing unresolved disputes",
+      "Established a scalable foundation for future analytics extensions"
     ],
-    thumbnail: "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/yv5mx53i_Aging%20DeAging.jpg",
+    tools: ["Python", "SQL (Snowflake)", "dbt Cloud", "Git"],
+    thumbnail:
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/yv5mx53i_Aging%20DeAging.jpg",
+    disableZoom: true
+  },
+
+  // 2️⃣ Performance & AE
+  {
+    id: 1,
+    title: "Noncompliance KPI Metrics",
+    subtitle: "Dashboard",
+    industry: "Pharmaceutical",
+    description:
+      "Enabled Customer Success teams to proactively manage MDRP noncompliance by rebuilding a performance-constrained dashboard into a KPI-driven analytics layer.",
+    problem:
+      "The legacy dashboard relied on a 45M-row claim-level dataset across five systems, causing long load times, slow filters, and frequent timeouts that hindered analysis.",
+    approach:
+      "Created a pre-aggregated KPI model consolidating claims data across key business dimensions:\n\n• Reduced dataset from 45M to 1.5M rows\n• Implemented standardized KPI flag logic\n• Rebuilt dashboards on an optimized data structure\n\nCentralized five sources into a single analytics-ready model.",
+    outcomes: [
+      "Reduced dashboard load times by 60%",
+      "Improved filter response time by 90%",
+      "Enabled faster, decision-ready noncompliance monitoring"
+    ],
+    tools: ["Python", "SQL (Snowflake)", "dbt Cloud", "Git", "Tableau"],
+    thumbnail:
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/8k6h2ojk_proper.png",
+    disableZoom: true
+  },
+
+  // 3️⃣ Enterprise governance
+  {
+    id: 3,
+    title: "Sectorial Exposures",
+    subtitle: "Analytics Review",
+    industry: "Banking",
+    description:
+      "Led analytics supporting climate risk reporting for a Tier 1 global bank, identifying data quality issues affecting material exposure calculations.",
+    problem:
+      "Regulatory exposure reporting relied on complex reference data with inconsistent entity hierarchies and sector classifications across portfolios.",
+    approach:
+      "Applied analytics-driven assurance techniques including cross-source reconciliation, hierarchy validation, and lineage analysis across reporting cycles.",
+    outcomes: [
+      "Identified material exposure discrepancies across high-risk sectors",
+      "Supported remediation prioritization and strengthened governance controls"
+    ],
+    tools: ["Python", "SQL (SQL Server)", "Qlik Sense", "Excel"],
+    thumbnail:
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/opqe6n0p_TR6_FINAL.png",
+    disableZoom: true
+  },
+
+  // 4️⃣ Governance platform
+  {
+    id: 5,
+    title: "Governance Oversight",
+    subtitle: "Web Application",
+    industry: "Banking",
+    description:
+      "Developed a Python-based internal application replacing an Excel-driven QC governance workflow, enabling live compliance metrics and trend analysis.",
+    problem:
+      "QC reviews were tracked in disconnected Excel files, limiting auditability and visibility into governance performance.",
+    approach:
+      "Built a Streamlit application backed by a SQL database to manage QC reviews, persist results, and surface governance metrics via dashboards.",
+    outcomes: [
+      "Replaced manual Excel workflow with a centralized system",
+      "Enabled real-time governance monitoring and trend analysis"
+    ],
+    tools: ["Python", "SQL (SQL Server)", "Qlik Sense", "Excel"],
+    thumbnail:
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/jvyx7x9o_Governance.png",
+    disableZoom: true
+  },
+
+  // 5️⃣ Capacity management
+  {
+    id: 4,
+    title: "Review Capacity",
+    subtitle: "Dashboard",
+    industry: "Banking",
+    description:
+      "Built a capacity planning dashboard consolidating review and staffing data across internal systems to support resource allocation.",
+    problem:
+      "Fragmented data prevented a unified view of workload, utilization, and planning accuracy.",
+    approach:
+      "Merged multiple Helios data sources into a unified model with drill-down from program to employee level.",
+    outcomes: [
+      "Improved visibility into utilization and staffing gaps",
+      "Supported data-driven workload rebalancing"
+    ],
+    tools: ["Python", "SQL (SQL Server)", "Qlik Sense", "Excel"],
+    thumbnail:
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/q36k332y_image.png",
+    disableZoom: true
+  },
+
+  // 6️⃣ Ops dashboard
+  {
+    id: 2,
+    title: "Covered Entity Onboarding",
+    subtitle: "Dashboard",
+    industry: "Pharmaceutical",
+    description:
+      "Built an onboarding visibility dashboard enabling teams to track Covered Entities across onboarding stages and identify bottlenecks.",
+    problem:
+      "Lack of visibility into onboarding steps required manual investigation and delayed follow-ups.",
+    approach:
+      "Designed a matrix-based dashboard showing onboarding stage versus days since last activity with drill-down to entity details.",
+    outcomes: [
+      "Enabled faster identification of stalled onboarding cases",
+      "Improved prioritization of follow-up activities"
+    ],
+    tools: ["Python", "SQL (Snowflake)", "dbt Cloud", "Git", "Tableau"],
+    thumbnail:
+      "https://customer-assets.emergentagent.com/job_datadev-profile-1/artifacts/0h3sly3e_Dashboard%20Ready.png",
     disableZoom: true
   }
 ];
-
-
