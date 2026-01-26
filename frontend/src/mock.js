@@ -1,5 +1,3 @@
-// Mock data for Rafał Kędzior's Portfolio
-
 export const personalInfo = {
   name: "Rafał Kędzior",
   title: "Data Analyst | BI Developer | Analytics Engineer",
@@ -71,7 +69,6 @@ export const skills = {
 };
 
 export const portfolio = [
-  // 1️⃣ Flagship — differentiator
   {
     id: 6,
     title: "Aging & De-Aging Claims",
@@ -96,7 +93,6 @@ export const portfolio = [
     disableZoom: true
   },
 
-  // 2️⃣ Performance & AE
   {
     id: 1,
     title: "Noncompliance KPI Metrics",
@@ -119,7 +115,6 @@ export const portfolio = [
     disableZoom: true
   },
 
-  // 3️⃣ Enterprise governance
   {
     id: 3,
     title: "Sectorial Exposures",
@@ -141,7 +136,6 @@ export const portfolio = [
     disableZoom: true
   },
 
-  // 4️⃣ Governance platform
   {
     id: 5,
     title: "Governance Oversight",
@@ -163,7 +157,6 @@ export const portfolio = [
     disableZoom: true
   },
 
-  // 5️⃣ Capacity management
   {
     id: 4,
     title: "Review Capacity",
@@ -185,7 +178,6 @@ export const portfolio = [
     disableZoom: true
   },
 
-  // 6️⃣ Ops dashboard
   {
     id: 2,
     title: "Covered Entity Onboarding",
